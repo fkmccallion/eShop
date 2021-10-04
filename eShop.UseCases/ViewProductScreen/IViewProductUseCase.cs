@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eShop.UseCases.SearchProductScreen
+namespace eShop.UseCases.ViewProductScreen
 {
-    public interface IViewProduct
+    public interface IViewProductUseCase
     {
         Product Execute(int id);
     }

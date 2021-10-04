@@ -8,18 +8,17 @@ using System.Threading.Tasks;
 
 namespace eShop.UseCases.SearchProductScreen
 {
-    public class ViewProduct : IViewProduct
+    public class SearchProductUseCase : ISearchProductUseCase
     {
         private readonly IProductRepository productRepository;
 
-        public ViewProduct(IProductRepository productRepository)
+        public SearchProductUseCase(IProductRepository productRepository)
         {
             this.productRepository = productRepository;
         }
-
-        public Product Execute(int id)
+        public IEnumerable<Product> Execute(string filter = null)
         {
-            return productRepository.GetProduct(id);
+            return productRepository.GetProducts(filter);
         }
     }
 }

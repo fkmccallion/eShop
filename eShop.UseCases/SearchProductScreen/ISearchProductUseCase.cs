@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eShop.UseCases.SearchProductScreen
 {
-    public interface ISearchProduct
+    public interface ISearchProductUseCase
     {
         IEnumerable<Product> Execute(string filter = null);
     }

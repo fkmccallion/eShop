@@ -1,6 +1,6 @@
 ﻿@page "/products"
 
-@inject ISearchProduct searchProduct
+@inject ISearchProductUseCase searchProductUseCase
 
 <h3>Search Products</h3>
 <br />
@@ -50,12 +50,12 @@
     {
         base.OnInitialized();
 
-        products = searchProduct.Execute();
+        products = searchProductUseCase.Execute();
     }
 
     private void HandleSearch(string filter)
     {
-        products = searchProduct.Execute(filter);
+        products = searchProductUseCase.Execute(filter);
     }
 
 }
