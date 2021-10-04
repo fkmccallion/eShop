@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.CoreBusiness", "eShop
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.UseCases", "eShop.UseCases\eShop.UseCases.csproj", "{5BD3DF5C-7654-4FBD-ABD4-7A1B84611AFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.ShoppingCart.LocalStorage", "Plugins\eShop.ShoppingCart.LocalStorage\eShop.ShoppingCart.LocalStorage.csproj", "{F22158F1-2A87-4A36-B3B8-7204CFBCDD05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{5BD3DF5C-7654-4FBD-ABD4-7A1B84611AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BD3DF5C-7654-4FBD-ABD4-7A1B84611AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BD3DF5C-7654-4FBD-ABD4-7A1B84611AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F22158F1-2A87-4A36-B3B8-7204CFBCDD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22158F1-2A87-4A36-B3B8-7204CFBCDD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22158F1-2A87-4A36-B3B8-7204CFBCDD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22158F1-2A87-4A36-B3B8-7204CFBCDD05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{AA62DEAC-D780-48B8-8C6C-DAA6F03978C7} = {4DCDD50A-5313-4B5B-A4DC-911D729868FB}
 		{EDBC533E-F0D4-4DC8-A7FD-BD8BA411446A} = {4DCDD50A-5313-4B5B-A4DC-911D729868FB}
 		{E02410FF-5DA9-4FE6-B882-7AC75CDDF8C1} = {4DCDD50A-5313-4B5B-A4DC-911D729868FB}
+		{F22158F1-2A87-4A36-B3B8-7204CFBCDD05} = {542B22E1-694A-443C-9C00-1E67DE264792}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3772FAE9-FB41-4DB0-A99F-A2D59C342FDB}
