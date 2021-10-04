@@ -108,7 +108,7 @@ namespace eShop.ShoppingCart.LocalStorage
         // Local storage
         private async Task SetOrder(Order order)
         {
-            await jSRuntime.InvokeVoidAsync("localStorage.setTiem", cstrShoppingCart, JsonConvert.SerializeObject(order));
+            await jSRuntime.InvokeVoidAsync("localStorage.setItem", cstrShoppingCart, JsonConvert.SerializeObject(order));
         }
     }
 }
