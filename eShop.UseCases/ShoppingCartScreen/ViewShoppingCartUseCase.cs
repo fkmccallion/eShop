@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eShop.UseCases.ShoppingCartScreen
 {
-    public class ViewShoppingCartUseCase
+    public class ViewShoppingCartUseCase : IViewShoppingCartUseCase
     {
         private readonly IShoppingCart shoppingCart;
 
