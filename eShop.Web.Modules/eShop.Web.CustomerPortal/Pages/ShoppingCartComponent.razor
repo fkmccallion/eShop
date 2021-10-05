@@ -8,7 +8,7 @@
         <ul>
             @for (int i = 0; i < order.LineItems.Count; i++)
             {
-                // line items
+                <LineItemComponent LineItems="order.LineItems[i]"></LineItemComponent>
                 @if (i < order.LineItems.Count - 1)
                 {
                     <li style="list-style:none;">
