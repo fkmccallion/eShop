@@ -11,5 +11,7 @@ namespace eShop.UseCases.PluginInterfaces.StateStore
         Task<int> GetItemsCount();
 
         void UpdateLineItemsCount();
+
+        void UpdateProductQuantity();
     }
 }
