@@ -23,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.UseCases", "eShop.Use
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.ShoppingCart.LocalStorage", "Plugins\eShop.ShoppingCart.LocalStorage\eShop.ShoppingCart.LocalStorage.csproj", "{F22158F1-2A87-4A36-B3B8-7204CFBCDD05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.StateStore.DI", "Plugins\eShop.StateStore.DI\eShop.StateStore.DI.csproj", "{D72D2EC0-02EF-4085-8833-A283BA069E81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.StateStore.DI", "Plugins\eShop.StateStore.DI\eShop.StateStore.DI.csproj", "{D72D2EC0-02EF-4085-8833-A283BA069E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
