@@ -13,4 +13,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\eShop.CoreBusiness\eShop.CoreBusiness.csproj" />
+  </ItemGroup>
+
 </Project>
