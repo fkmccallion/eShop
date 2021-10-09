@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace eShop.Web.Controllers
 {
-    public class AuthenticationController : Controller
+    public class AuthenticateController : Controller
     {
         [Route("/authenticate")]
-        public async Task<IActionResult> Authenticate([FromQuery]string usr, [FromQuery]string pwd)
+        public async Task<IActionResult> Authenticate([FromQuery] string usr, [FromQuery] string pwd)
         {
             if (usr == "admin" && pwd == "adminadmin")
             {
@@ -35,6 +35,7 @@ namespace eShop.Web.Controllers
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
+
             return Redirect("/outstandingorders");
         }
     }
