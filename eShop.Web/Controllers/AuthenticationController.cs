@@ -11,13 +11,13 @@ namespace eShop.Web.Controllers
     public class AuthenticateController : Controller
     {
         [Route("/authenticate")]
-        public async Task<IActionResult> Authenticate([FromQuery] string usr, [FromQuery] string pwd)
+        public async Task<IActionResult> Authenticate([FromQuery]string user, [FromQuery]string pwd)
         {
-            if (usr == "admin" && pwd == "adminadmin")
+            if (user == "admin" && pwd == "adminadmin")
             {
                 var userClaims = new List<Claim>()
                 {
-                    new Claim(ClaimTypes.Name, usr),
+                    new Claim(ClaimTypes.Name, user),
                     new Claim(ClaimTypes.Email, "admin@eshop.com"),
                     new Claim(ClaimTypes.HomePhone, "12345678")
                 };

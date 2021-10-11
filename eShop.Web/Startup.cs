@@ -47,6 +47,8 @@ namespace eShop.Web
                     config.LoginPath = "/authenticate";
                 });
 
+            //services.AddAuthentication("eShop.CoockieAuth").AddCookie();
+
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();

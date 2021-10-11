@@ -52,10 +52,10 @@
 
     private Order order;
 
-    private AuthenticationState authState { get; set; }
+    private AuthenticationState authState;
 
     [CascadingParameter]
-    private Task<AuthenticationState> authStateTask;
+    private Task<AuthenticationState> authStateTask { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
