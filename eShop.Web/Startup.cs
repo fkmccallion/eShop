@@ -40,14 +40,12 @@ namespace eShop.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddAuthentication("eShop.CoockieAuth")
+            services.AddAuthentication("eShop.CookieAuth")
                 .AddCookie("eShop.CookieAuth", config =>
                 {
                     config.Cookie.Name = "eShop.CookieAuth";
                     config.LoginPath = "/authenticate";
                 });
-
-            //services.AddAuthentication("eShop.CoockieAuth").AddCookie();
 
             services.AddRazorPages();
             services.AddServerSideBlazor();
